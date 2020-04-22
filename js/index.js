@@ -1,1 +1,3 @@
-alert('hhhhhhh');
+function sendPostMessage() {
+    alert('hhh')
+}
