@@ -1,6 +1,6 @@
 const sendMassageToParent = () => {
     window.top.postMessage({
-        message: 'replay',
+        message: 'payoneer-plugin',
         type: 'deeplink',
         action: 'withdrawal'
     }, '*');
