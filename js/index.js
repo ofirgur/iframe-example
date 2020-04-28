@@ -1,9 +1,11 @@
-const sendMassageToParent = () => {
+const sendMassageToParent = type => {
     window.top.postMessage({
         message: 'payoneer-plugin',
-        type: 'deeplink',
-        params: {
+        type,
+        params: type === 'deeplink' ? {
             pathname: '/?action=withdrawal'
+        } : {
+            
         }
     }, '*');
 };
