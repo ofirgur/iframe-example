@@ -9,7 +9,7 @@ const sendMassageToParent = type => {
         message: 'payoneer-plugin',
         type,
         params: type === 'deeplink' ? {
-            pathname: '/?action=withdrawal'
+            pathname: 'http://localhost:8080/?action=withdrawal'
         } : {}
     }, '*');
 };
