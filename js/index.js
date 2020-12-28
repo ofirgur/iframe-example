@@ -7,7 +7,7 @@
 
 const sendMassageToParent = type => {
     const params = {
-        pathname: type === 'deeplinks' && 'http://localhost:8080/?action=withdrawal',
+        pathname: type === 'deeplink' && 'http://localhost:8080/?action=withdrawal',
         successMsg: type === 'toast' && 'Success toast!!!'
     };
     
