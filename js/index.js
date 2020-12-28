@@ -1,4 +1,5 @@
 (() => {
+    console.log('Hello world!');
     setTimeout(() => {
         sendMassageToParent('ready');
     }, 5000);
