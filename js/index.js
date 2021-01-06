@@ -20,7 +20,7 @@ const sendMassageToParent = type => {
         successMsg: type === 'toast' && 'Success toast!!!'
     };
     
-    window.top.postMessage({
+    window.postMessage({
         message: 'payoneer-plugin',
         type,
         params
