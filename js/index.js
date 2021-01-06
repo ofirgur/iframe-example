@@ -2,6 +2,14 @@
     setTimeout(() => {
         sendMassageToParent('ready');
     }, 5000);
+    
+    const onMessage = e => {
+        if(e.message == 'payoneer-plugin') {
+            console.log('helloooooooooooooooooo: ', e.data.type);
+        }
+    };
+    
+    window.addEventListener('message', onMessage);
 })();
 
 const sendMassageToParent = type => {
