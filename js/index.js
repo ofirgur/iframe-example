@@ -7,6 +7,7 @@
         const { message, type } = e.data;
         if(message == 'payoneer-plugin') {
             console.log('helloooooooooooooooooo: ', type);
+            sendMassageToParent('keepalive');
         }
     };
     
