@@ -1,7 +1,7 @@
 (() => {
     setTimeout(() => {
         sendMassageToParent('ready');
-    }, 5000);
+    }, 2000);
     
     const onMessage = e => {
         const { message, type } = e.data;
